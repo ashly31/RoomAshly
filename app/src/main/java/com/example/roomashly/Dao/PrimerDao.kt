@@ -5,7 +5,7 @@ import com.example.roomashly.Entidad.PrimeraEntidad
 
 @Dao
 interface PrimerDao {
-    @Query("SELECT * FROM tblPrimera ORDER BY id DESC")
+    @Query("SELECT * FROM tblPrimera ORDER BY id ASC")
     fun getAllPrimerInfo(): List<PrimeraEntidad>?
 
     @Insert
